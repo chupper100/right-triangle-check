@@ -13,7 +13,7 @@ def tamgiacvuong():
 	sleep(2)
 
 	a=input('Again?')
-	if a == 'yes':
+	if a == ('yes' or 'Yes'):
 		tamgiacvuong()
 	elif a=='no':
 		sys.exit(0)
