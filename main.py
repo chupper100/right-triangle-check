@@ -15,6 +15,6 @@ def tamgiacvuong():
 	a=input('Again?')
 	if a == ('yes' or 'Yes'):
 		tamgiacvuong()
-	elif a=='no':
+	elif a==('no'or'No'):
 		sys.exit(0)
 tamgiacvuong()
