@@ -1,11 +1,11 @@
 #pow(co so, luy thua)
 from time import sleep
 import sys
-
+ạ
 def tamgiacvuong():
-	canha=int(input('Nhap canh A:'))
-	canhb=int(input('Nhap canh B:'))
-	canhc=int(input('Nhap canh C:'))
+	canha=int(input('Nhập cạnh A:'))
+	canhb=int(input('Nhập cạnh B:'))
+	canhc=int(input('Nhập cạnh C:'))
 	if pow(canha,2)==pow(canhb,2)+pow(canhc,2) or pow(canhb,2)==pow(canha,2)+pow(canhc,2) or pow(canhc,2)==pow(canha,2)+pow(canhb,2):
 		print('Đây là tam giác vuông.')
 	elif pow(canha,2)!=pow(canhb,2)+pow(canhc,2) or pow(canhb,2)!=pow(canha,2)+pow(canhc,2) or pow(canhc,2)!=pow(canha,2)+pow(canhb,2):
