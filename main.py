@@ -1,7 +1,7 @@
 #pow(co so, luy thua) hàm dùng để tính thừa số.
 from time import sleep
 import sys
-ạ
+
 def tamgiacvuong():
 	canha=int(input('Nhập cạnh A:'))
 	canhb=int(input('Nhập cạnh B:'))
