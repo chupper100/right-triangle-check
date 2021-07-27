@@ -3,18 +3,18 @@ from time import sleep
 import sys
 
 def tamgiacvuong():
-	canha=int(input('Nhập cạnh A:'))
-	canhb=int(input('Nhập cạnh B:'))
-	canhc=int(input('Nhập cạnh C:'))
+	canha=int(input('Enter A side: '))
+	canhb=int(input('Enter B side: '))
+	canhc=int(input('Enter C side: '))
 	if pow(canha,2)==pow(canhb,2)+pow(canhc,2) or pow(canhb,2)==pow(canha,2)+pow(canhc,2) or pow(canhc,2)==pow(canha,2)+pow(canhb,2):
-		print('Đây là tam giác vuông.')
+		print('This is a right triangle.')
 	elif pow(canha,2)!=pow(canhb,2)+pow(canhc,2) or pow(canhb,2)!=pow(canha,2)+pow(canhc,2) or pow(canhc,2)!=pow(canha,2)+pow(canhb,2):
-		print('Đây không phải là tam giác vuông.')
+		print('This is not a right triangle.')
 	sleep(2)
 
-	a=input('Again?')
-	if a == ('yes' or 'Yes'):
+	user_choice=input('Do you want to check another one? \n y: yes, n: no').lower()
+	if user_choice == ('yes' or 'y'):
 		tamgiacvuong()
-	elif a==('no'or'No'):
+	elif user_choice==('no'or'n'):
 		sys.exit(0)
 tamgiacvuong()
