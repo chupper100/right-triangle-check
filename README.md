@@ -1,4 +1,8 @@
-#Tam Giác Vuông
-##Kiểm tra nếu một tam giac có phải là tam giác vuông hay không bằng cách nhập 3 cạnh của hình vuông.
+# What is this?
+This programme will ask you for 3 sides of a triangle and check if is it a right triangle or not.
 * HI
 * *hi
+
+```
+print('hi')
+```
