@@ -1,4 +1,4 @@
-#pow(co so, luy thua)
+#pow(co so, luy thua) hàm dùng để tính thừa số.
 from time import sleep
 import sys
 ạ
