@@ -16,7 +16,7 @@ def tamgiacvuong():
 	running=False
 
 while running==False:    
-  user_choice=str(input('y: yes, n: no\nDo you want to check another one?'))
+  user_choice=str(input('y: yes, n: no\nDo you want to check?'))
   if user_choice == 'yes' or user_choice == 'y':
     tamgiacvuong()
   elif user_choice == 'no'or user_choice == 'n':
