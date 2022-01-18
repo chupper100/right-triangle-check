@@ -1,6 +1,3 @@
-from ast import Try
-
-
 def tamgiac(canhA, canhB, canhC):
     if canhA + canhB > canhC and canhA + canhC > canhB and canhB + canhC > canhA:
         return True
