@@ -29,6 +29,7 @@ def tamgiacDeu(canhA, canhB, canhC):
 
 
 def TamGiac():
+    
     canhA = int(input("Cạnh A: "))
     canhB = int(input("Cạnh B: "))
     canhC = int(input("Cạnh C: "))
