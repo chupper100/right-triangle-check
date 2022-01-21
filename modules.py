@@ -4,14 +4,18 @@ def tamgiac(canhA, canhB, canhC):
 
 
 def tamgiacVuong(canhA, canhB, canhC):
+    # function name
     if (
         canhA * canhA == (canhB * canhB + canhC * canhC)
         or canhB * canhB == (canhA * canhA + canhC * canhC)
         or canhC * canhC == (canhA * canhA + canhB * canhB)
     ):
         return True
-    else:
-        return "Không phải tam giác vuông."
+
+
+def tamgiacVuongCan(canhA, canhB, canhC):
+    if tamgiacVuong(canhA, canhB, canhC) and tamgiacCan(canhA, canhB, canhC):
+        return True
 
 
 def tamgiacCan(canhA, canhB, canhC):
@@ -19,8 +23,6 @@ def tamgiacCan(canhA, canhB, canhC):
         canhA, canhB, canhC
     ):
         return True
-    else:
-        return "Không phải tam giác cân."
 
 
 def tamgiacDeu(canhA, canhB, canhC):
@@ -29,20 +31,23 @@ def tamgiacDeu(canhA, canhB, canhC):
 
 
 def TamGiac():
-    
-    canhA = int(input("Cạnh A: "))
-    canhB = int(input("Cạnh B: "))
-    canhC = int(input("Cạnh C: "))
+
+    canhA = float(input("Cạnh A: "))
+    canhB = float(input("Cạnh B: "))
+    canhC = float(input("Cạnh C: "))
 
     if tamgiac(canhA, canhB, canhC):
-        functions = [tamgiacVuong, tamgiacCan, tamgiacDeu]
+        functions = [tamgiacVuongCan, tamgiacVuong, tamgiacCan, tamgiacDeu]
+
         # loop through all functions
         for function in functions:
             result = function(canhA, canhB, canhC)
-            if result == True:
+            if result != False and result != None:
                 print(f"{function.__name__}" + ": " + str(result))
                 break
-            elif result == False:
-                print(f"{function.__name__}" + ": " + "False")
     else:
         print("Không phải tam giác.")
+
+
+if __name__ == "__main__":
+    TamGiac()
